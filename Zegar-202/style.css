@@ -14,7 +14,7 @@ body {
     height: 100vh;
     overflow: hidden;
     font-size: 84px;
-    font-weight: 500;
+    font-weight: normal;
     color: var(--main-color);
 }
 
