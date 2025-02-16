@@ -6,7 +6,7 @@
 
 body {
     --main-color: #000;
-    --clock-size: 500px;
+    --clock-size: 600px;
     background: rgb(43, 130, 170);
     display: flex;
     align-items: center;
