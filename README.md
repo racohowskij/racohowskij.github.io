@@ -6,3 +6,9 @@ Możesz tutaj przejrzeć te oto projekty, ale nie gwarantuję satysfakcji ani zw
 Pozdrawiam.
 >szymek proszę pana, szy-mek\
 >trzy sylaby - szy-mek.
+
+## A TAK WOGULE...
+Możesz przejrzeć *te oto projekty:*
+## [Zegar 202](https://racohowskij.github.io/Zegar-202/)
+## [Zegar 202 (stara wersja)](https://racohowskij.github.io/Zegar-202-old/)
+## [Maszynka](https://racohowskij.github.io/Maszynka/)
