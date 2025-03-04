@@ -1,3 +1,4 @@
+`#191914`
 # *github pana racoha racohowskiego™*
 ### **Dzień dobry!**
 Witam serdecznie kogoś, kto jakimś cudem zawędrował na prawie sam koniec internetu <sub>nie, czekaj, to tylko moje konto na githubie</sub>.\
@@ -8,7 +9,7 @@ Pozdrawiam.
 >trzy sylaby - szy-mek.
 
 ## A TAK WOGULE...
-Możesz przejrzeć *te oto projekty:*
-[Zegar 202](https://racohowskij.github.io/Zegar-202/)\
-[Zegar 202 (stara wersja)](https://racohowskij.github.io/Zegar-202-old/)\
-[Maszynka](https://racohowskij.github.io/Maszynka/)\
+Możesz przejrzeć *te oto projekty:*\
++ [Zegar 202](https://racohowskij.github.io/Zegar-202/)\
++ [Zegar 202 (stara wersja)](https://racohowskij.github.io/Zegar-202-old/)\
++ [Maszynka](https://racohowskij.github.io/Maszynka/)\
