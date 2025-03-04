@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<title>Maszynka</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<style>
+    @font-face {
+        font-family: 'DSEG7-Classic';
+        src: url('fonts/DSEG7Classic-BoldItalic.woff2') format('woff2'),
+        url('fonts/DSEG7Classic-BoldItalic.woff') format('woff'),
+        url('fonts/DSEG7Classic-BoldItalic.ttf') format('truetype');
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    body{
+        background: rgb(29, 29, 29);
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'DSEG7-Classic';
+        font-weight: bold;
+        font-style: italic;
+        font-size: 144px;
+        box-sizing: border-box;
+        color: rgb(255, 75, 75);
+    }
+
+    .counter{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .BG{
+        z-index: 50;
+        position: absolute;
+        color: rgb(46, 46, 46);
+    }
+
+    .num{
+        z-index: 100;
+        position: absolute;
+        text-shadow: 0 0 5px rgb(255, 75, 75);
+    }
+
+    .buttons{
+        z-index: 150;
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+<div class="counter">
+    <span class="BG">8.8.</span>
+    <span class="num" id="num">--</span>
+</div>
+
+<div class="buttons">
+    <button type="submit" style="border: 0; background: transparent" id="dcr"><img src="img/minus.png" width="90" height="90"/></button>
+    <button type="submit" style="border: 0; background: transparent" id="ncr"><img src="img/plus.png" width="90" height="90"/></button>
+    <button type="submit" style="border: 0; background: transparent" id="gen"><img src="img/los.png" width="90" height="90"/></button>
+</div>
+
+<script>
+    let max = 0, clicks = 0;
+
+    function chkLimits(){
+        if(max <= 1){
+            max = 1;
+        }
+        else{
+            if(max >= 99){
+                max = 99;
+            }
+            else{}
+        }
+    }
+
+    function setZero(a){
+        if( a < 10 ){
+            zero = '0';
+        }
+        else{
+            zero = '';
+        }
+    }
+
+
+document.getElementById('dcr').onclick = function(){
+    clicks = 0;
+    max-=1;
+    setZero(max);
+    chkLimits();
+    document.getElementById('num').innerHTML = zero + max;
+}
+
+document.getElementById('ncr').onclick = function(){
+    clicks = 0;
+    max+=1;
+    setZero(max); 
+    chkLimits();
+    document.getElementById('num').innerHTML = zero + max;
+}
+
+document.getElementById('gen').onclick = function(){
+    clicks+=1;
+    if(clicks <= 1){
+        document.getElementById('num').innerHTML = '--';
+    }
+    else{
+        if(max == 0){
+            document.getElementById('num').innerHTML = '--';
+        }
+        else{
+            let res = Math.floor(Math.random() * max) + 1;
+            setZero(res);
+            document.getElementById('num').innerHTML = zero + res;
+        }
+    }
+}
+
+</script>
+
+</body>
