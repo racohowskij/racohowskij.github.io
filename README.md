@@ -9,6 +9,6 @@ Pozdrawiam.
 
 ## A TAK WOGULE...
 Możesz przejrzeć *te oto projekty:*
-## [Zegar 202](https://racohowskij.github.io/Zegar-202/)
-## [Zegar 202 (stara wersja)](https://racohowskij.github.io/Zegar-202-old/)
-## [Maszynka](https://racohowskij.github.io/Maszynka/)
+[Zegar 202](https://racohowskij.github.io/Zegar-202/)
+[Zegar 202 (stara wersja)](https://racohowskij.github.io/Zegar-202-old/)
+[Maszynka](https://racohowskij.github.io/Maszynka/)
