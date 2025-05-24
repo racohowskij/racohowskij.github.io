@@ -140,6 +140,27 @@ document.getElementById('gen').onclick = function(){
     }
 }
 
+document.addEventListener("keydown", event => {
+  if (event.isComposing || event.keyCode !== 107) {
+    return;
+  }
+    clicks = 0;
+    max+=1;
+    setZero(max); 
+    chkLimits();
+    document.getElementById('num').innerHTML = zero + max;
+});
+
+document.addEventListener("keydown", event => {
+  if (event.isComposing || event.keyCode !== 109) {
+    return;
+  }
+    clicks = 0;
+    max-=1;
+    setZero(max);
+    chkLimits();
+    document.getElementById('num').innerHTML = zero + max;;
+});
 </script>
 
 </body>
